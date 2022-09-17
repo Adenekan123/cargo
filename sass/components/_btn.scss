@@ -1,0 +1,39 @@
+.btn {
+    padding: 1.3rem 2rem;
+    border: 0px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    &__primary {
+        background-color: $color-primary;
+        color: $color-white;
+        &:hover {
+            background-color: darken($color-primary, 5);
+        }
+    }
+    &__outline {
+        &--primary {
+            border: 1px solid $color-primary;
+            color: $color-primary;
+            &:hover {
+                background-color: darken($color-primary, 5);
+                color: $color-white;
+            }
+        }
+    }
+    &__black {
+        background-color: $color-black;
+        color: $color-white;
+        &:hover {
+            background-color: darken($color-primary, 5);
+        }
+    }
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    &__link {
+        text-decoration: none;
+        fill: currentColor;
+    }
+}

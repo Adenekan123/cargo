@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../js/splide-2.4.21/dist/css/themes/splide-skyblue.min.css">
+    <link rel="stylesheet" href="../js/splide-2.4.21/dist/css/splide.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+<body>
+
+</body>
+<header class="header px-5" id="nav">
+    <div class="header__brand">
+        <a href="#" class="header__logo">
+            <img src="../img/logo.png" alt="" class="header__logo">
+        </a>
+    </div>
+    <input type="checkbox" class="d-none" name="" id="menu">
+
+    <label for="menu" class="header__menu d-none d-lg-block">
+        <svg class="footer__icon">
+            <use xlink:href="../icons/sprites.svg#icon-align-justify"></use>
+        </svg>
+    </label>
+    <ul class="header__nav">
+        <li class="header__list">
+            <a href="../index.html" class="header__link">Home</a>
+        </li>
+        <li class="header__list">
+            <a href="company.html" class="header__link">
+                Company
+                <!-- <svg class="header__link--icon">
+                <use xlink:href="icons/sprites.svg#icon-chevron-down"></use>
+            </svg> -->
+            </a>
+            <!-- <div class="dropdown" id="companyropdown">
+            <a href="#" class="m-b p-2 dropdown__item">Air Freight</a>
+            <a href="#" class="m-b p-2 dropdown__item">Sea Freight</a>
+            <a href="#" class="m-b p-2 dropdown__item">Land Transport</a>
+            <a href="#" class="m-b p-2 dropdown__item">Groupage</a>
+        </div> -->
+        </li>
+        <li class="header__list dropdown__link">
+            <a href="#" class="header__link" data-toggle="servicedropdown">
+                Services
+                <svg class="header__link--icon">
+                    <use xlink:href="../icons/sprites.svg#icon-chevron-down"></use>
+                </svg>
+            </a>
+            <div class="dropdown" id="servicedropdown">
+                <a href="airFreight.html" class="m-b p-2 dropdown__item">Air Freight</a>
+                <a href="seaFreight.html" class="m-b p-2 dropdown__item">Sea Freight</a>
+                <a href="landTransport.html" class="m-b p-2 dropdown__item">Land Transport</a>
+                <a href="groupage.html" class="m-b p-2 dropdown__item">Groupage</a>
+            </div>
+        </li>
+
+        <li class="header__list">
+            <a href="news.html" class="header__link header__link--active">News and Media</a>
+        </li>
+        <li class="header__list dropdown__link">
+            <a href="#" class="header__link" data-toggle="servicedropdown">
+                Resources
+                <svg class="header__link--icon">
+                    <use xlink:href="../icons/sprites.svg#icon-chevron-down"></use>
+                </svg>
+            </a>
+            <div class="dropdown" id="resourcesdropdown">
+                <a href="document.html" class="m-b p-2 dropdown__item">Custom Documents</a>
+                <a href="terms.html" class="m-b p-2 dropdown__item">Terms of Carriage</a>
+                <a href="trackShipment.html" class="m-b p-2 dropdown__item">Track shipment</a>
+            </div>
+        </li>
+
+        <li class="header__list">
+            <a href="contact.html" class="header__link">Contacts</a>
+        </li>
+    </ul>
+
+
+    <div class="header__search">
+        <svg class="footer__icon">
+            <use xlink:href="../icons/sprites.svg#icon-facebook"></use>
+        </svg>
+        <svg class="footer__icon">
+            <use xlink:href="../icons/sprites.svg#icon-twitter"></use>
+        </svg>
+        <svg class="footer__icon">
+            <use xlink:href="../icons/sprites.svg#icon-instagram"></use>
+        </svg>
+        <svg class="footer__icon">
+            <use xlink:href="../icons/sprites.svg#icon-linkedin-square"></use>
+        </svg>
+
+    </div>
+
+</header>
+
+<div class="container px-5 py-1 news">
+    <div class="row">
+        <div class="col-12 p-2">
+            <h1 class="text__header3 text__capitalize">
+                news & media
+            </h1>
+        </div>
+        <div class="col-lg-4">
+            <div class="card p-2">
+                <div class="card__head mb-1">
+                    <img src="../img/header-3.jpg" alt="" class="card__img w-100">
+                </div>
+                <div class="card__body">
+                    <p class="text__sub mb-1">Delivery, Package, Transport</p>
+                    <h2 class="text__header-small mb-2">
+                        <a href="#" class="text__decoration-none text__black">
+                            Colgate-Palmolive renews with DE FACILITATOR in Malaysia
+                        </a>
+                    </h2>
+                    <p class="text__normal mb-1">SEPTEMBER 1, 2017</p>
+                    <p class="text__normal">
+                        Singapore 16 January, 2018 – DE FACILITATOR Logistics, one of the world’s largest supply chain management...
+                    </p>
+                    <a href="" class="btn__link text__capitalize  text__black d-flex align-items-center mt-2">
+                        read more
+                        <svg class="btn__icon">
+                            <use xlink:href="../icons/sprites.svg#icon-chevrons-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card p-2">
+                <div class="card__head mb-1">
+                    <img src="../img/header-5.jpg" alt="" class="card__img w-100">
+                </div>
+                <div class="card__body">
+                    <p class="text__sub mb-1">Delivery, Package, Transport</p>
+                    <h2 class="text__header-small mb-2">
+                        <a href="#" class="text__decoration-none text__black">
+                            Colgate-Palmolive renews with DE FACILITATOR in Malaysia
+                        </a>
+                    </h2>
+                    <p class="text__normal mb-1">SEPTEMBER 1, 2017</p>
+                    <p class="text__normal">
+                        Singapore 16 January, 2018 – DE FACILITATOR Logistics, one of the world’s largest supply chain management...
+                    </p>
+                    <a href="" class="btn__link text__capitalize  text__black d-flex align-items-center mt-2">
+                        read more
+                        <svg class="btn__icon">
+                            <use xlink:href="../icons/sprites.svg#icon-chevrons-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card p-2">
+                <div class="card__head mb-1">
+                    <img src="../img/header-3.jpg" alt="" class="card__img w-100">
+                </div>
+                <div class="card__body">
+                    <p class="text__sub mb-1">Delivery, Package, Transport</p>
+                    <h2 class="text__header-small mb-2">
+                        <a href="#" class="text__decoration-none text__black">
+                            Colgate-Palmolive renews with DE FACILITATOR in Malaysia
+                        </a>
+                    </h2>
+                    <p class="text__normal mb-1">SEPTEMBER 1, 2017</p>
+                    <p class="text__normal">
+                        Singapore 16 January, 2018 – DE FACILITATOR Logistics, one of the world’s largest supply chain management...
+                    </p>
+                    <a href="" class="btn__link text__capitalize  text__black d-flex align-items-center mt-2">
+                        read more
+                        <svg class="btn__icon">
+                            <use xlink:href="../icons/sprites.svg#icon-chevrons-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card p-2">
+                <div class="card__head mb-1">
+                    <img src="../img/news-5.jpg" alt="" class="card__img w-100">
+                </div>
+                <div class="card__body">
+                    <p class="text__sub mb-1">Delivery, Package, Transport</p>
+                    <h2 class="text__header-small mb-2">
+                        <a href="#" class="text__decoration-none text__black">
+                            Colgate-Palmolive renews with DE FACILITATOR in Malaysia
+                        </a>
+                    </h2>
+                    <p class="text__normal mb-1">SEPTEMBER 1, 2017</p>
+                    <p class="text__normal">
+                        Singapore 16 January, 2018 – DE FACILITATOR Logistics, one of the world’s largest supply chain management...
+                    </p>
+                    <a href="" class="btn__link text__capitalize  text__black d-flex align-items-center mt-2">
+                        read more
+                        <svg class="btn__icon">
+                            <use xlink:href="../icons/sprites.svg#icon-chevrons-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card p-2">
+                <div class="card__head mb-1">
+                    <img src="../img/header-2.jpg" alt="" class="card__img w-100">
+                </div>
+                <div class="card__body">
+                    <p class="text__sub mb-1">Delivery, Package, Transport</p>
+                    <h2 class="text__header-small mb-2">
+                        <a href="#" class="text__decoration-none text__black">
+                            Colgate-Palmolive renews with DE FACILITATOR in Malaysia
+                        </a>
+                    </h2>
+                    <p class="text__normal mb-1">SEPTEMBER 1, 2017</p>
+                    <p class="text__normal">
+                        Singapore 16 January, 2018 – DE FACILITATOR Logistics, one of the world’s largest supply chain management...
+                    </p>
+                    <a href="" class="btn__link text__capitalize  text__black d-flex align-items-center mt-2">
+                        read more
+                        <svg class="btn__icon">
+                            <use xlink:href="../icons/sprites.svg#icon-chevrons-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card p-2">
+                <div class="card__head mb-1">
+                    <img src="../img/news-5.jpg" alt="" class="card__img w-100">
+                </div>
+                <div class="card__body">
+                    <p class="text__sub mb-1">Delivery, Package, Transport</p>
+                    <h2 class="text__header-small mb-2">
+                        <a href="#" class="text__decoration-none text__black">
+                            Colgate-Palmolive renews with DE FACILITATOR in Malaysia
+                        </a>
+                    </h2>
+                    <p class="text__normal mb-1">SEPTEMBER 1, 2017</p>
+                    <p class="text__normal">
+                        Singapore 16 January, 2018 – DE FACILITATOR Logistics, one of the world’s largest supply chain management...
+                    </p>
+                    <a href="" class="btn__link text__capitalize  text__black d-flex align-items-center mt-2">
+                        read more
+                        <svg class="btn__icon">
+                            <use xlink:href="../icons/sprites.svg#icon-chevrons-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card p-2">
+                <div class="card__head mb-1">
+                    <img src="../img/header-2.jpg" alt="" class="card__img w-100">
+                </div>
+                <div class="card__body">
+                    <p class="text__sub mb-1">Delivery, Package, Transport</p>
+                    <h2 class="text__header-small mb-2">
+                        <a href="#" class="text__decoration-none text__black">
+                            Colgate-Palmolive renews with DE FACILITATOR in Malaysia
+                        </a>
+                    </h2>
+                    <p class="text__normal mb-1">SEPTEMBER 1, 2017</p>
+                    <p class="text__normal">
+                        Singapore 16 January, 2018 – DE FACILITATOR Logistics, one of the world’s largest supply chain management...
+                    </p>
+                    <a href="" class="btn__link text__capitalize  text__black d-flex align-items-center mt-2">
+                        read more
+                        <svg class="btn__icon">
+                            <use xlink:href="../icons/sprites.svg#icon-chevrons-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card p-2">
+                <div class="card__head mb-1">
+                    <img src="../img/news-5.jpg" alt="" class="card__img w-100">
+                </div>
+                <div class="card__body">
+                    <p class="text__sub mb-1">Delivery, Package, Transport</p>
+                    <h2 class="text__header-small mb-2">
+                        <a href="#" class="text__decoration-none text__black">
+                            Colgate-Palmolive renews with DE FACILITATOR in Malaysia
+                        </a>
+                    </h2>
+                    <p class="text__normal mb-1">SEPTEMBER 1, 2017</p>
+                    <p class="text__normal">
+                        Singapore 16 January, 2018 – DE FACILITATOR Logistics, one of the world’s largest supply chain management...
+                    </p>
+                    <a href="" class="btn__link text__capitalize  text__black d-flex align-items-center mt-2">
+                        read more
+                        <svg class="btn__icon">
+                            <use xlink:href="../icons/sprites.svg#icon-chevrons-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card p-2">
+                <div class="card__head mb-1">
+                    <img src="../img/header-2.jpg" alt="" class="card__img w-100">
+                </div>
+                <div class="card__body">
+                    <p class="text__sub mb-1">Delivery, Package, Transport</p>
+                    <h2 class="text__header-small mb-2">
+                        <a href="#" class="text__decoration-none text__black">
+                            Colgate-Palmolive renews with DE FACILITATOR in Malaysia
+                        </a>
+                    </h2>
+                    <p class="text__normal mb-1">SEPTEMBER 1, 2017</p>
+                    <p class="text__normal">
+                        Singapore 16 January, 2018 – DE FACILITATOR Logistics, one of the world’s largest supply chain management...
+                    </p>
+                    <a href="" class="btn__link text__capitalize  text__black d-flex align-items-center mt-2">
+                        read more
+                        <svg class="btn__icon">
+                            <use xlink:href="../icons/sprites.svg#icon-chevrons-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script src="../js/splide-2.4.21/dist/js/splide.min.js "></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var splider = new Splide('#image-slider', {
+            'cover': true,
+        }).mount();
+
+        var splider = new Splide('#image-slider2', {
+            'cover': true,
+            'heightRatio': 0.4,
+        }).mount();
+
+        splider.on('move', function() {
+
+        });
+    });
+</script>
+
+</html>

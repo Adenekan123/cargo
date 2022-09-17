@@ -1,0 +1,46 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    &-fluid {
+        max-width: 100%;
+        padding: 0 3rem;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    width: 100%;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @include setGridColumn($i);
+    }
+}
+
+@include responsive(sm) {
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            @include setGridColumn($i);
+        }
+    }
+}
+
+@include responsive(md) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            @include setGridColumn($i);
+        }
+    }
+}
+
+@include responsive(lg) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            @include setGridColumn($i);
+        }
+    }
+}

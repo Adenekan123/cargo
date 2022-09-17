@@ -1,0 +1,17 @@
+{
+    "name": "cargo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "node-sass": "^6.0.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "node-sass sass/main.scss css/style.css -w"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

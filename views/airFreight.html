@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../js/splide-2.4.21/dist/css/themes/splide-skyblue.min.css">
+    <link rel="stylesheet" href="../js/splide-2.4.21/dist/css/splide.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#accordion").accordion({
+                heightStyle: "content",
+                icons: {
+                    header: "ui-icon-circle-arrow-e",
+                    activeHeader: "ui-icon-circle-arrow-s"
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+</body>
+<header class="header px-5" id="nav">
+    <div class="header__brand">
+        <a href="#" class="header__logo">
+            <img src="../img/logo.png" alt="" class="header__logo">
+        </a>
+    </div>
+    <input type="checkbox" class="d-none" name="" id="menu">
+
+    <label for="menu" class="header__menu d-none d-lg-block">
+    <svg class="footer__icon">
+        <use xlink:href="../icons/sprites.svg#icon-align-justify"></use>
+    </svg>
+</label>
+    <ul class="header__nav">
+        <li class="header__list">
+            <a href="../index.html" class="header__link">Home</a>
+        </li>
+        <li class="header__list">
+            <a href="company.html" class="header__link">
+            Company
+            <!-- <svg class="header__link--icon">
+                <use xlink:href="icons/sprites.svg#icon-chevron-down"></use>
+            </svg> -->
+        </a>
+            <!-- <div class="dropdown" id="companyropdown">
+            <a href="#" class="m-b p-2 dropdown__item">Air Freight</a>
+            <a href="#" class="m-b p-2 dropdown__item">Sea Freight</a>
+            <a href="#" class="m-b p-2 dropdown__item">Land Transport</a>
+            <a href="#" class="m-b p-2 dropdown__item">Groupage</a>
+        </div> -->
+        </li>
+        <li class="header__list dropdown__link">
+            <a href="#" class="header__link header__link--active" data-toggle="servicedropdown">
+            Services
+            <svg class="header__link--icon">
+                <use xlink:href="../icons/sprites.svg#icon-chevron-down"></use>
+            </svg>
+        </a>
+            <div class="dropdown" id="servicedropdown">
+                <a href="airFreight.html" class="m-b p-2 dropdown__item">Air Freight</a>
+                <a href="seaFreight.html" class="m-b p-2 dropdown__item">Sea Freight</a>
+                <a href="landTransport.html" class="m-b p-2 dropdown__item">Land Transport</a>
+                <a href="groupage.html" class="m-b p-2 dropdown__item">Groupage</a>
+            </div>
+        </li>
+
+        <li class="header__list">
+            <a href="news.html" class="header__link">News and Media</a>
+        </li>
+        <li class="header__list dropdown__link">
+            <a href="#" class="header__link" data-toggle="servicedropdown">
+            Resources
+            <svg class="header__link--icon">
+                <use xlink:href="../icons/sprites.svg#icon-chevron-down"></use>
+            </svg>
+        </a>
+            <div class="dropdown" id="resourcesdropdown">
+                <a href="document.html" class="m-b p-2 dropdown__item">Custom Documents</a>
+                <a href="terms.html" class="m-b p-2 dropdown__item">Terms of Carriage</a>
+                <a href="trackShipment.html" class="m-b p-2 dropdown__item">Track shipment</a>
+            </div>
+        </li>
+
+        <li class="header__list">
+            <a href="contact.html" class="header__link">Contacts</a>
+        </li>
+    </ul>
+
+
+    <div class="header__search">
+        <svg class="footer__icon">
+                    <use xlink:href="../icons/sprites.svg#icon-facebook"></use>
+                </svg>
+        <svg class="footer__icon">
+                    <use xlink:href="../icons/sprites.svg#icon-twitter"></use>
+                </svg>
+        <svg class="footer__icon">
+                    <use xlink:href="../icons/sprites.svg#icon-instagram"></use>
+                </svg>
+        <svg class="footer__icon">
+                    <use xlink:href="../icons/sprites.svg#icon-linkedin-square"></use>
+                </svg>
+
+    </div>
+
+</header>
+
+
+<div class="bg-freight h-40 d-flex align-items-center">
+    <h2 class="text__header3-large text__capitalize text__white px-5 ">air freight</h2>
+
+</div>
+
+<div class="container px-5 py-1">
+    <div class="row">
+        <div class="col-12 col-lg-3 p-2 p-lg-0">
+            <p class="text__sub text__capitalize">transport solutions</p>
+            <ul class="list mb-4 text__normal">
+                <li class="list__item">
+                    <a href="#" class="list__link text__capitalize text__bold text__primary">air freight</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="list__link text__capitalize">sea freight</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="list__link text__capitalize">groupage</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="list__link text__capitalize">land transport</a>
+                </li>
+            </ul>
+
+            <div class="bg-grey p-4 mb-4">
+                <p class="text__sub text__capitalize mb-2">brochure</p>
+                <p class="text__normal mb-3">
+                    Working from home meant we could vary snack and coffee breaks.
+                </p>
+                <button class="btn btn__primary">Download PDF</button>
+            </div>
+
+            <div class="bg-primary p-3 text__white mb-lg-4">
+                <svg class="service__icon">
+                    <use xlink:href="../icons/sprites.svg#icon-local_shipping"></use>
+                </svg>
+                <p class="text__sub text__capitalize mb-2 text__white">let's help you</p>
+                <p class="text__normal text__bold">
+                    Nigeria
+                </p>
+                <p class="text__normal text__bold">
+                    Call us:+ (123) 1800-567-8990
+                </p>
+                <p class="text__normal text__bold">
+                    office@gmail.com
+                </p>
+                <p class="text__normal text__bold">
+                    Adedeji Aderogba, Lagos
+                </p>
+                <a href="" class=" text__capitalize text__white text__bold text__center mt-2 d-block">
+                    or fill our form
+                    
+                </a>
+            </div>
+
+        </div>
+        <div class="col-12 col-lg-8 p-2 p-lg-0 ">
+            <h1 class="text__header3 mb-3">How <span class="text__primary">can we help?</span></h1>
+            <p class="text__normal mb-2">
+                Our mission at DE FACILITATOR is to create measurable value for our stakeholders while serving our customers, our team members and our community. Treating others with respect and compassion is at the core of the ITS philosophy and we provide a safe working
+                environment for our employees and offer them opportunities to grow, both personally and professionally. This belief also extends to our community, where we work to provide economic stability through quality employment opportunities and
+                give back whenever we can.
+            </p>
+            <p class="text__normal mb-2">
+                We are proud to have led the way in DE FACILITATOR since 1999. Simply put, we provide creative logistics solutions with our asset-based dedicated and expedited fleet, warehousing and distribution services and nationwide multi-modal freight brokerage.
+                Based on our dependable work ethic, company culture and values and the highest level of service in the industry—our vision is to achieve excellence in everything that we do.
+            </p>
+            <p class="text__normal mb-4">
+                When the company founders started DE FACILITATOR Logistics, they vowed to create a company that was built on strong family values—respect, integrity and compassion—and a true work-life balance. They committed to work hard for each other, their employees,
+                their clients and their community, building relationships that would grow and bring success for everyone involved. We at ITS Logistics are proud of what we’ve accomplished so far, and look forward to our future success together.
+            </p>
+
+            <h1 class="text__header3 mb-3">Our <span class="text__primary">Expertise</span></h1>
+
+            <div id="accordion" class="accordion">
+                <h3 class="">Commercial</h3>
+                <div>
+                    <p>
+                        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum
+                        a velit eu ante scelerisque vulputate.
+                    </p>
+                </div>
+                <h3>Technical</h3>
+                <div>
+                    <p>
+                        Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+                    </p>
+                </div>
+                <h3>Localization</h3>
+                <div>
+                    <p>
+                        Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam
+                        nisi, eu iaculis leo purus venenatis dui.
+                    </p>
+                    <ul>
+                        <li>List item one</li>
+                        <li>List item two</li>
+                        <li>List item three</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-grey text__normal border px-5 p-0 p-lg-5">
+    <div class="container ">
+        <div class="row justify-content-center align-items-center ">
+            <div class="col-12 col-lg-7 b-r ">
+                <div class="row justify-content-center 
+ align-items-center">
+                    <div class="col-12 col-lg-6 p-2 p-lg-0 mb-0 mb-lg-3">
+                        <div class=" row justify-content-center align-items-center ">
+                            <div class="col-lg-4 ">
+                                <svg class="sub__icon ">
+                                    <use xlink:href="../icons/sprites.svg#icon-deck "></use>
+                                </svg>
+                            </div>
+                            <div class="col-lg-6 ">
+                                <p class="text__sub ">Call center</p>
+                                <p>24/7 support</p>
+                                <p>+ (234) 7085-089-191</p>
+                                <p>+ (234) 7085-904-414</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 p-2 p-lg-0 mb-0 mb-lg-3 ">
+                        <div class="row justify-content-center align-items-center ">
+                            <div class="col-lg-4 ">
+                                <svg class="sub__icon ">
+                                    <use xlink:href="../icons/sprites.svg#icon-location "></use>
+                                </svg>
+                            </div>
+                            <div class="col-lg-6 ">
+                                <p class="text__sub ">Location</p>
+                                <p>2, Musari Street, Beesan Toll Gate,</p>
+                                <p>By Airport Road, Oshodi, Lagos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 ">
+                <div class="px-5 ">
+                    <div class="row justify-content-center align-items-center ">
+                        <div class="col-12 col-lg-4 ">
+                            <p class="text__sub text__capitalize track-label text-lg-center mb-lg-2 ">track and trace</p>
+                        </div>
+                        <div class="col-12 col-lg-8 ">
+                            <form action="# " class="form track-form ">
+                                <div class="row justify-content-center 
+ align-items-center">
+                                    <div class="col-12 col-lg-7 mb-lg-1 ">
+                                        <input type="text " class="form__input " placeholder="Ex:123456 ">
+                                    </div>
+                                    <div class="col-lg-5 ">
+                                        <button class="btn btn__primary text__normal text__capitalize px-1 mb-lg-4 ">track & trace</button>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer mt-5 ">
+    <div class="container pb-3 px-lg-5 pl-5 ">
+        <div class="row justify-content-center">
+            <div class="col-6 col-lg-3 mb-2 mb-lg-0 ">
+                <p class="text__sub ">Services</p>
+                <ul class="footer__links ">
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">air freight</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">sea freight</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">land transport</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">group page</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">consultancy</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">value added services</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3 mb-2 mb-lg-0 ">
+                <p class="text__sub ">company</p>
+                <ul class="footer__links ">
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">about</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">enterprise</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">sustainbility</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">new & media</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">case studies</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-3 mb-2 mb-lg-0 ">
+                <p class="text__sub ">industries</p>
+                <ul class="footer__links ">
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">chemicals</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">diy</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">automative</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">consumer goods</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">life science</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">foreign trade</a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" col-6 col-lg-3 mb-2 mb-lg-0 ">
+                <p class="text__sub ">useful links</p>
+                <ul class="footer__links ">
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">track shipment</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">warehouse logistics</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">global agents newtwork</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class="footer__link ">FAQ</a>
+                    </li>
+                    <li class="footer__list ">
+                        <a href=" " class=" btn btn__outline--primary mt-1 ">get a free rate</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg-grey py-4 px-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6 ">
+                    <p class="text__sub mb-2 ">Deliver on time with no hassle.</p>
+                    <svg class="footer__icon ">
+                        <use xlink:href="../icons/sprites.svg#icon-facebook "></use>
+                    </svg>
+                    <svg class="footer__icon ">
+                        <use xlink:href="../icons/sprites.svg#icon-twitter "></use>
+                    </svg>
+                    <svg class="footer__icon ">
+                        <use xlink:href="../icons/sprites.svg#icon-instagram "></use>
+                    </svg>
+                    <svg class="footer__icon ">
+                        <use xlink:href="../icons/sprites.svg#icon-linkedin-square "></use>
+                    </svg>
+                </div>
+                <div class="col-lg-6 ">
+                    <p class="text__normal text__black text__capitalize text__bold mb-2 ">Keep up to date.</p>
+                    <form action=" " class="form ">
+                        <div class="row justify-content-center 
+">
+                            <div class="col-lg-9 ">
+                                <input type="email " class="form__input " placeholder="Email Address ">
+                            </div>
+                            <div class="col-lg-3 ">
+                                <a href="# " class="btn btn__black text__normal ">Sign me up!</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-4 ">
+                <div class="col-lg-6 mb-lg-2 ">
+                    <p class="text_normal text__capitalize ">© 2021 Transportion & Logistics Theme by Captain_Nek / All rights reserved</p>
+                </div>
+                <div class="col-lg-6 ">
+                    <p class="text_normal text__capitalize ">
+                        <a href="# " class="footer__link mr-2 ">Privacy</a>
+                        <a href="# " class="footer__link mr-2 ">Terms & Condition</a>
+                        <a href="# " class="footer__link mr-2 ">Legal Documents</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="../js/splide-2.4.21/dist/js/splide.min.js "></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var splider = new Splide('#image-slider', {
+            'cover': true,
+        }).mount();
+
+        var splider = new Splide('#image-slider2', {
+            'cover': true,
+            'heightRatio': 0.4,
+        }).mount();
+
+        splider.on('move', function() {
+
+        });
+    });
+</script>
+
+</html>
